@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head class="h-100">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/app.css">
+    <title>محصولات ترنجینو</title>
+</head>
+
+<body class="min-vh-100 d-flex flex-column">
+    <main class="flex-grow-1 flex-shrink-1">
+        <section class="container d-flex flex-column align-items-center pt-3">
+            <img class="img-fluid" src="https://toranjino.com/wp-content/uploads/2021/03/toranjino-logo.png"
+                alt="toranjino-logo">
+            <h1 id="h1" class="mt-3">محصولات فروشگاه ترنجینو</h1>
+            <div id="search" class="mt-3 m-auto w-100">
+                <input type="search" id="searchInput" class="form-control"
+                    placeholder="نام محصول مورد نظرتان را وارد کنید ...">
+            </div>
+        </section>
+
+        <section id="productList" class="container d-grid gap-2 mt-4"></section>
+        <section id="spinner" class="container d-flex justify-content-center align-items-center mt-5">
+            <div class="spinner-border text-success" role="status">
+                <span class="sr-only"></span>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer" class="d-flex justify-content-center align-items-center">
+        <span class="mx-2 text-center">تمامی حقوق مادی و معنوی برای فروشگاه ترنجینو محفوظ می‌باشد. طراحی و پیاده سازی:
+            <a href="https://gerehagency.ir" target="_blank" class="text-success">آژانس خلاقیت گره</a></span>
+    </footer>
+
+    @include ('footer')
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

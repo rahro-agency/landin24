@@ -1,0 +1,53 @@
+@import url(fontiran.css);
+::selection {
+    background-color: #198754;
+    color: #fff;
+}
+
+body {
+    font-family: dana;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #4b4b4b;
+}
+
+#h1 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    cursor: default;
+}
+
+#productList {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+#footer {
+    font-size: 14px;
+    font-weight: 500;
+    height: 60px;
+    margin-top: 2rem;
+    background-color: #eff2f5;
+    color: #868a8f;
+}
+
+.hidden {
+    display: none;
+}
+
+@media (min-width:768px) {
+    #h1 {
+        font-size: 1.5rem;
+    }
+    #productList {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+}
